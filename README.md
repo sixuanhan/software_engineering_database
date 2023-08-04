@@ -1,3 +1,4 @@
 # software_engineering_database
-This is a database project for my COSC 61 Database System course taken in summer 2023.
-The main branch contains the latest commit of the project. Please check respective branches for milestone submission.
+This is the submission of the first milestone.
+
+One change from milestone1 is that I realized te second and third datasets are exclusive to work opportunities in India, while my focus is on the ones in the US. Therefore, I deleted the related datasets and added a new one with the locations of Fortune 500 Companies.
