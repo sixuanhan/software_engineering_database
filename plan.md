@@ -16,8 +16,8 @@ main tasks
 
 ### Fortune 500 Companies US.csv
 
-- fix importing error
-- rename the file to `Fortune_500_Companies_US.csv`
+- fix ASCII error
+- rename file name and column names
 - change all `Company Name` to lowercase
 - change `Number of Employees` data type to `INT`
 - delete the dollar sign and commas from `Revenue`, `Profits`, `Assets`, and `Market Value` columns
@@ -25,33 +25,29 @@ main tasks
 
 ### Fortune_500_Corporate_Headquarters.csv
 
-- fix importing error
+- fix ASCII error
+- rename file name and column names
 - change all `NAME` to lowercase
 - only keep `NAME`, `CITY`, and `STATE` columns
 
 ### Top 50 US Tech Companies 2022 - 2023.csv
 
-- rename the file to `Top_50_US_Tech_Companies.csv`
+- rename file name and column names
 - standardize `Company name`
 - remove the `Industry` column
 - remove all columns after `Founding Year`
 
 ### city_salary.csv
 
+- rename file name and column names
 - name the first column `city_id`
 - replace the second column with the `City` column and delete the `Metro` column
-
+- parse `City` column in `city_salary` into two columns: `City` and `State`
 
 ## Import processes
 
 ### import csv's as individual tables
 I will use the Table Data Import Wizard provided in MySQL Workbench to import the csv's.
-
-One error that occurred when I tried was: 
-
-`Unhandled exception: 'ascii' codec can't decode byte 0xd5 in position 3467: ordinal not in range(128)`
-
-After some research and testing I am still not able to fix this problem.
 
 ### forward engineer the EER diagram to create tables
 
@@ -66,10 +62,6 @@ main tasks
   - make sure that all the values are right and not missing
   - make sure that data types align
   - no redundancy
-  
-- data cleaning and modification
-  - modify the data to help with the next step
-  - specifially, parse `City` column in `city_salary` into two columns: `City` and `State`
 
 - organize information from the csv-produced tables into the EER-produced tables
   - company_name

@@ -1,9 +1,23 @@
 # software_engineering_database
-This is the submission of the first milestone.
 
-One change from milestone1 is that I realized te second and third datasets are exclusive to work opportunities in India, while my focus is on the ones in the US. Therefore, I deleted the related datasets and added a new one with the locations of Fortune 500 Companies.
+This is the submission of the third milestone.
 
-Here is the EER diagram.
-![EER diagram](EER.png)
+## ASCII error in milestone2
 
-Find the [mwb file](EER.mwb) here.
+I fixed the import error mentioned in the README in milestone2. It was due to the ASCII Code imcompatibility. Here are the steps that I took:
+
+- go to [hexit.it](https://hexed.it/) and open the csv file
+- change all occurrences of the curly single quotes and curly double quotes to  straight quotes or double quotes
+- save the file
+
+## changes in plan from milestone2
+
+Some changes of data pre-processing from milestone2:
+
+- changed all "-" entries to "null"
+- renamed all columns because it's hard to process spaced names (like "company name" instead of "company_name" in MySQL)
+- moved the step of parsing composite attributes (namely, the `City` column in `city_salary.csv`) to pre-processing
+
+These changes have been updated in [plan.md](/plan.md).
+
+

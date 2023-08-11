@@ -242,7 +242,7 @@ rank,name,prev_rank,num_employee_m,revenues_m,revenue_change_m,profits_m,profit_
 241,hilton worldwide holdings,254,169000,11663,0.035,348,-0.752,26211,19276
 242,first data,249,24000,11584,0.012,420,null,40292,14224
 243,henry schein,268,21000,11572,0.089,506.8,0.058,6730,13461
-244,toys “r” us,240,64000,11540,-0.022,-36,null,6908,null
+244,toys "r" us,240,64000,11540,-0.022,-36,null,6908,null
 245,bb&t corp.,273,37500,11538,0.115,2426,0.164,219276,36141
 246,reinsurance group of america,271,2371,11522,0.106,701.4,0.397,53098,8169
 247,core-mark holding,317,7688,11507,0.299,54.2,0.052,1497,1445
