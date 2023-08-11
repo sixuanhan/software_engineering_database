@@ -1,4 +1,4 @@
-# Pseudocode
+# Plan
 
 ## Pre-import Manipulation
 

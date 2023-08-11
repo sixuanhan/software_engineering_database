@@ -17,6 +17,8 @@ Some changes of data pre-processing from milestone2:
 - changed all "-" entries to "null"
 - renamed all columns because it's hard to process spaced names (like "company name" instead of "company_name" in MySQL)
 - moved the step of parsing composite attributes (namely, the `City` column in `city_salary.csv`) to pre-processing
+- dropped the `m_cap` column in `company_finance`
+- found and deleted 3 duplicates in `f500_cleaned.csv`
 
 These changes have been updated in [plan.md](/plan.md).
 

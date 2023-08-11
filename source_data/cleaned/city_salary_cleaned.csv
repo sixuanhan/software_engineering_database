@@ -1,4 +1,4 @@
-city_id,city,state,mean_sd_salary_adj,mean_sd_salary_unadj,mean_salary_adj,Number of Software Developer Jobs,num_sd_jobs,col_avg,rent_avg,lpp_avg
+city_id,city,state,mean_sd_salary_adj,mean_sd_salary_unadj,mean_salary_adj,num_sd_jobs,med_home_p,col_avg,rent_avg,lpp_avg
 1,columbus, oh,117552,108500,51260,13430,192000,984.8,1421.5,9335.4
 2,seattle, wa,117323,131167,65400,65760,491600,1250.7,2528.2,8971.3
 3,charlotte, nc,114122,107046,51000,12800,208500,989.9,1974.5,8939.8

@@ -1,4 +1,4 @@
-rank,name,prev_rank,num_employee_m,revenues_m,revenue_change_m,profits_m,profit_change_m,assets_m,market_value_m
+rk,name,prev_rank,num_employee_m,revenues_m,revenue_change_m,profits_m,profit_change_m,assets_m,market_value_m
 1,walmart,1,2300000,485873,0.008,13643,-0.072,198825,218619
 2,berkshire hathaway,4,367700,223604,0.061,24074,0,620854,411035
 3,apple,3,116000,215639,-0.077,45687,-0.144,321686,753718
@@ -107,7 +107,6 @@ rank,name,prev_rank,num_employee_m,revenues_m,revenue_change_m,profits_m,profit_
 106,kraft heinz,153,41000,26487,0.444,3632,4.729,120480,110528
 107,tech data,108,9500,26235,-0.005,195.1,-0.266,7932,3569
 108,avnet,102,17700,26219,-0.061,506.5,-0.114,11240,5898
-109,avnet,102,90000,25923,-0.125,1659,-0.772,61538,65676
 110,macy's,103,148300,25778,-0.048,619,-0.423,19851,9046
 111,abbvie,123,30000,25638,0.122,5953,0.157,66099,103838
 112,mcdonald's,109,375000,24622,-0.031,4686.5,0.035,31024,106150
@@ -298,7 +297,6 @@ rank,name,prev_rank,num_employee_m,revenues_m,revenue_change_m,profits_m,profit_
 297,mgm resorts international,309,66500,9455,0.029,1101.4,null,28173,15733
 298,corning,313,40700,9390,0.031,3695,1.76,27899,25030
 299,republic services,312,33000,9388,0.03,612.6,-0.183,20630,21312
-300,alcoa,null,14000,9318,null,-400,null,16741,6337
 301,fidelity national information services,392,55000,9241,0.401,568,-0.101,26031,26178
 302,pacific life,326,3628,9169,0.061,824,0.247,143298,null
 303,suntrust banks,329,24375,9161,0.074,1878,-0.028,204875,27175
@@ -482,7 +480,6 @@ rank,name,prev_rank,num_employee_m,revenues_m,revenue_change_m,profits_m,profit_
 481,booz allen hamilton holding,487,22600,5406,0.025,294.1,0.265,3010,5307
 482,chemours,null,7000,5400,null,7,null,6060,7080
 483,western & southern financial group,479,2178,5398,0.008,241.2,-0.472,43831,null
-484,regions financial,453,7293,5389,-0.05,900,1.961,8357,12643
 485,windstream holdings,443,11870,5387,-0.066,-383.5,null,11770,1038
 486,seaboard,460,11781,5379,-0.038,312,0.825,4755,4881
 487,essendant,477,6600,5369,0.001,63.9,null,2164,568
