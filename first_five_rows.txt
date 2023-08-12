@@ -1,0 +1,136 @@
+Table: city
+city_id	city_name       	state_id
+1      	columbus        	1       
+2      	seattle         	2       
+3      	charlotte       	3       
+4      	colorado springs	4       
+5      	dayton          	1       
+
+Table: city_econ
+city_id	med_home_p	col_avg	rent_avg	lpp_avg
+1      	192000.0  	984.8  	1421.5  	9335.4 
+2      	491600.0  	1250.7 	2528.2  	8971.3 
+3      	208500.0  	989.9  	1974.5  	8939.8 
+4      	296500.0  	1049.2 	1594.0  	8493.1 
+5      	124100.0  	961.2  	1072.1  	4887.7 
+
+Table: city_jobs
+city_id	num_sd_jobs
+1      	13430      
+2      	65760      
+3      	12800      
+4      	5780       
+5      	4240       
+
+Table: city_salary
+city_id	mean_sd_salary_adj	mean_sd_salary_unadj	mean_salary_adj
+1      	117552.0          	108500.0            	51260.0        
+2      	117323.0          	131167.0            	65400.0        
+3      	114122.0          	107046.0            	51000.0        
+4      	112118.0          	111670.0            	51430.0        
+5      	111616.0          	99338.0             	50100.0        
+
+Table: city_salary_cleaned
+city_id	city            	state	mean_sd_salary_adj	mean_sd_salary_unadj	mean_salary_adj	num_sd_jobs	med_home_p	col_avg	rent_avg	lpp_avg
+1      	columbus        	 oh  	117552            	108500              	51260          	13430      	192000    	984.8  	1421.5  	9335.4 
+2      	seattle         	 wa  	117323            	131167              	65400          	65760      	491600    	1250.7 	2528.2  	8971.3 
+3      	charlotte       	 nc  	114122            	107046              	51000          	12800      	208500    	989.9  	1974.5  	8939.8 
+4      	colorado springs	 co  	112118            	111670              	51430          	5780       	296500    	1049.2 	1594.0  	8493.1 
+5      	dayton          	 oh  	111616            	99338               	50100          	4240       	124100    	961.2  	1072.1  	4887.7 
+
+Table: company_city
+c_id	city_id
+68  	1      
+125 	1      
+158 	1      
+166 	1      
+219 	1      
+
+Table: company_employee
+c_id	num_employees
+1   	2300000      
+2   	367700       
+3   	116000       
+4   	72700        
+5   	68000        
+
+Table: company_finance
+c_id	revenues	r_change	profits	p_change	assets	m_value
+1   	485873  	0.008   	13643.0	-0.072  	198825	218619 
+2   	223604  	0.061   	24074.0	0.000   	620854	411035 
+3   	215639  	-0.077  	45687.0	-0.144  	321686	753718 
+4   	205004  	-0.167  	7840.0 	-0.515  	330314	340056 
+5   	192487  	0.062   	2258.0 	0.530   	56563 	31439  
+
+Table: company_name
+c_id	c_name                
+94  	3m                    
+393 	a-mark precious metals
+134 	abbott laboratories   
+110 	abbvie                
+497 	abm industries        
+
+Table: company_rank
+c_id	c_rank
+1   	1     
+2   	2     
+3   	3     
+4   	4     
+5   	5     
+
+Table: company_sector
+c_id	s_id
+3   	1   
+27  	2   
+28  	2   
+81  	2   
+98  	2   
+
+Table: company_year
+c_id	f_yr
+3   	1976
+12  	1994
+27  	1998
+28  	1975
+32  	1911
+
+Table: f500_cleaned
+rk	name              	prev_rank	num_employee_m	revenues_m	revenue_change_m	profits_m	profit_change_m	assets_m	market_value_m
+1 	walmart           	1        	2300000       	485873    	0.008           	13643    	-0.072         	198825  	218619        
+2 	berkshire hathaway	4        	367700        	223604    	0.061           	24074    	0.0            	620854  	411035        
+3 	apple             	3        	116000        	215639    	-0.077          	45687    	-0.144         	321686  	753718        
+4 	exxon mobil       	2        	72700         	205004    	-0.167          	7840     	-0.515         	330314  	340056        
+5 	mckesson          	5        	68000         	192487    	0.062           	2258     	0.53           	56563   	31439         
+
+Table: f500_hq_cleaned
+name                       	city      	state
+albertsons cos.            	boise     	id   
+micron technology          	boise     	id   
+laboratory corp. of america	burlington	nc   
+lam research               	fremont   	ca   
+synnex                     	fremont   	ca   
+
+Table: sector
+s_id	s_name                  
+1   	consumer electronics    
+2   	software infrastructure 
+3   	software application    
+4   	semiconductors          
+5   	communication equipments
+
+Table: state
+state_id	state_name
+1       	 oh       
+2       	 wa       
+3       	 nc       
+4       	 co       
+5       	 ca       
+
+Table: top_50_cleaned
+name      	year	sector                 	hq_state
+apple     	1976	consumer electronics   	CA      
+microsoft 	1975	software infrastructure	WA      
+alphabet  	1998	software infrastructure	CA      
+amazon.com	1994	software application   	WA      
+nvidia    	1993	semiconductors         	CA      
+
