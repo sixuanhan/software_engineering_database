@@ -1,9 +1,5 @@
 # software_engineering_database
-This is the submission of the first milestone.
 
-One change from milestone1 is that I realized te second and third datasets are exclusive to work opportunities in India, while my focus is on the ones in the US. Therefore, I deleted the related datasets and added a new one with the locations of Fortune 500 Companies.
+This is the project site for my final project for COSC 61: Database System that I took during summer 2023 with Professor Adam Goldstein. My goal is to find interesting datasets from the internet, design and build a database out of the datasets, and explore findings using SQL queries.
 
-Here is the EER diagram.
-![EER diagram](EER.png)
-
-Find the [mwb file](EER.mwb) here.
+Please checkout the branches for milestone submissions.
