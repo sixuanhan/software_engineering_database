@@ -1,0 +1,501 @@
+   name,city,state
+albertsons cos.,boise,id
+micron technology,boise,id
+laboratory corp. of america,burlington,nc
+lam research,fremont,ca
+synnex,fremont,ca
+ross stores,dublin,ca
+clorox,oakland,ca
+dick's sporting goods,coraopolis,pa
+united states steel,pittsburgh,pa
+wesco international,pittsburgh,pa
+pnc financial services group,pittsburgh,pa
+ppg industries,pittsburgh,pa
+steel dynamics,fort wayne,in
+newmont mining,greenwood village,co
+arrow electronics,centennial,co
+ch2m hill,englewood,co
+dish network,englewood,co
+liberty interactive,englewood,co
+liberty media,englewood,co
+western union,englewood,co
+aes,arlington,va
+calatlantic group,arlington,va
+cummins,columbus,in
+walmart,bentonville,ar
+j.b. hunt transport services,lowell,ar
+sealed air,elmwood park,nj
+becton dickinson,franklin lakes,nj
+ascena retail group,mahwah,nj
+cognizant technology solutions,teaneck,nj
+whirlpool,benton harbor,mi
+iheartmedia,san antonio,tx
+cst brands,san antonio,tx
+valero energy,san antonio,tx
+andeavor,san antonio,tx
+usaa,san antonio,tx
+harris,melbourne,fl
+ball,broomfield,co
+level 3 communications,broomfield,co
+autonation,fort lauderdale,fl
+burlington stores,burlington,nj
+cincinnati financial,fairfield,oh
+ak steel holding,west chester,oh
+kellogg,battle creek,mi
+campbell soup,camden,nj
+dollar tree,chesapeake,va
+genesis healthcare,kennett square,pa
+las vegas sands,las vegas,nv
+mgm resorts international,las vegas,nv
+genuine parts,atlanta,ga
+hd supply holdings,atlanta,ga
+home depot,atlanta,ga
+alliance data systems,plano,tx
+dr pepper snapple group,plano,tx
+j.c. penney,plano,tx
+yum china holdings,plano,tx
+chevron,san ramon,ca
+us foods holding,rosemont,il
+anixter international,glenview,il
+illinois tool works,glenview,il
+allstate,northbrook,il
+kraft heinz,chicago,il
+ingredion,westchester,il
+sears holdings,hoffman estates,il
+motorola solutions,chicago,il
+jones lang lasalle,chicago,il
+old republic international,chicago,il
+exelon,chicago,il
+boeing,chicago,il
+r.r. donnelley & sons,chicago,il
+united continental holdings,chicago,il
+lkq,chicago,il
+rite aid,camp hill,pa
+keycorp,cleveland,oh
+sherwin-williams,cleveland,oh
+parker-hannifin,cleveland,oh
+progressive,mayfield village,oh
+travelcenters of america,westlake,oh
+chs,inver grove height,mn
+patterson,saint paul,mn
+kimberly-clark,irving,tx
+celanese,irving,tx
+exxon mobil,irving,tx
+fluor,irving,tx
+vistra energy,irving,tx
+michaels cos.,irving,tx
+builders firstsource,dallas,tx
+hollyfrontier,dallas,tx
+at&t,dallas,tx
+tenet healthcare,dallas,tx
+dean foods,dallas,tx
+energy transfer equity,dallas,tx
+southwest airlines,dallas,tx
+texas instruments,dallas,tx
+american family insurance group,madison,wi
+hershey,hershey,pa
+dollar general,goodlettsville,tn
+hca holdings,nashville,tn
+airgas,radnor,pa
+amerisourcebergen,chesterbrook,pa
+lincoln national,radnor,pa
+davita healthcare partners,denver,co
+fannie mae,washington,dc
+danaher,washington,dc
+conagra foods,omaha,ne
+berkshire hathaway,omaha,ne
+union pacific,omaha,ne
+arthur j. gallagher,itasca,il
+univar,downers grove,il
+dover,downers grove,il
+mcdonald's,oak brook,il
+treehouse foods,oak brook,il
+navistar international,lisle,il
+quintiles transnational holdings,durham,nc
+csx,jacksonville,fl
+fidelity national financial,jacksonville,fl
+fidelity national information services,jacksonville,fl
+auto-owners insurance,lansing,mi
+western refining,el paso,tx
+m&t bank corp.,buffalo,ny
+erie insurance group,erie,pa
+adp,roseland,nj
+prudential financial,newark,nj
+public service enterprise group,newark,nj
+nvr,reston,va
+leidos holdings,reston,va
+computer sciences corporation,mclean,va
+general dynamics,falls church,va
+northrop grumman,falls church,va
+adobe systems,mclean,va
+booz allen hamilton holding,mclean,va
+capital one financial,mclean,va
+freddie mac,mclean,va
+hilton worldwide holdings,mclean,va
+praxair,danbury,ct
+general electric,fairfield,ct
+w.r. berkley,greenwich,ct
+xpo logistics,greenwich,ct
+xerox,norwalk,ct
+emcor group,norwalk,ct
+frontier communications,norwalk,ct
+priceline group,norwalk,ct
+terex,westport,ct
+charter communications,stamford,ct
+harman international industries,stamford,ct
+synchrony financial,stamford,ct
+united rentals,stamford,ct
+bb&t corp.,winston-salem,nc
+reynolds american,winston-salem,nc
+hanesbrands,winston-salem,nc
+big lots,columbus,oh
+cardinal health,dublin,oh
+american electric power,columbus,oh
+nationwide,columbus,oh
+l brands,columbus,oh
+veritiv,atlanta,ga
+asbury automotive group,duluth,ga
+southern,atlanta,ga
+suntrust banks,atlanta,ga
+coca-cola,atlanta,ga
+intercontinental exchange,atlanta,ga
+newell brands,hoboken,nj
+ups,atlanta,ga
+first data,atlanta,ga
+delta air lines,atlanta,ga
+carmax,richmond,va
+mohawk industries,calhoun,ga
+o'reilly automotive,springfield,mo
+vf,greensboro,nc
+westrock,norcross,ga
+agco,duluth,ga
+ncr,atlanta,ga
+unum group,chattanooga,tn
+american financial group,cincinnati,oh
+kroger,cincinnati,oh
+macy's,cincinnati,oh
+western & southern financial group,cincinnati,oh
+fifth third bancorp,cincinnati,oh
+eversource energy,springfield,ma
+massachusetts mutual life insurance,springfield,ma
+marathon petroleum,findlay,oh
+owens & minor,mechanicsville,va
+calpine,houston,tx
+centerpoint energy,houston,tx
+enterprise products partners,houston,tx
+eog resources,houston,tx
+kinder morgan,houston,tx
+pacific life,newport beach,ca
+plains gp holdings,houston,tx
+targa resources,houston,tx
+waste management,houston,tx
+baker hughes,houston,tx
+group 1 automotive,houston,tx
+halliburton,houston,tx
+national oilwell varco,houston,tx
+phillips 66,houston,tx
+apache,houston,tx
+quanta services,houston,tx
+sysco,houston,tx
+conocophillips,houston,tx
+cigna,bloomfield,ct
+stanley black & decker,new britain,ct
+united technologies,farmington,ct
+hartford financial services group,hartford,ct
+aetna,hartford,ct
+unitedhealth group,minnetonka,mn
+supervalu,eden prairie,mn
+c.h. robinson worldwide,eden prairie,mn
+xcel energy,minneapolis,mn
+u.s. bancorp,minneapolis,mn
+target,minneapolis,mn
+thrivent financial for lutherans,minneapolis,mn
+best buy,richfield,mn
+general mills,minneapolis,mn
+mosaic,plymouth,mn
+markel,glen allen,va
+performance food group,richmond,va
+altria group,richmond,va
+genworth financial,richmond,va
+wellcare health plans,tampa,fl
+merck,kenilworth,nj
+lowe's,mooresville,nc
+cms energy,jackson,mi
+lithia motors,medford,or
+regions financial,birmingham,al
+humana,louisville,ky
+kindred healthcare,louisville,ky
+yum brands,louisville,ky
+seaboard,shawnee mission,ks
+stryker,kalamazoo,mi
+weyerhaeuser,seattle,wa
+expedia,bellevue,wa
+paccar,bellevue,wa
+costco,issaquah,wa
+microsoft,redmond,wa
+nordstrom,seattle,wa
+expeditors international of washington,seattle,wa
+amazon.com,seattle,wa
+starbucks,seattle,wa
+alaska air group,seattle,wa
+abm industries,new york,ny
+zimmer biomet holdings,warsaw,in
+hormel foods,austin,mn
+baxter international,deerfield,il
+discover financial services,riverwoods,il
+essendant,deerfield,il
+mondelez international,deerfield,il
+walgreens boots alliance,deerfield,il
+packaging corp. of america,lake forest,il
+tenneco,lake forest,il
+w.w. grainger,lake forest,il
+cdw,vernon hills,il
+hertz global holdings,estero,fl
+ppl,allentown,pa
+air products & chemicals,allentown,pa
+rockwell collins,cedar rapids,ia
+abbott laboratories,santa monica,ca
+farmers insurance exchange,los angeles,ca
+occidental petroleum,los angeles,ca
+aecom,los angeles,ca
+cbre group,los angeles,ca
+reliance steel & aluminum,los angeles,ca
+live nation entertainment,beverly hills,ca
+mattel,el segundo,ca
+activision blizzard,santa monica,ca
+molina healthcare,long beach,ca
+jacobs engineering group,dallas,tx
+avery dennison,glendale,ca
+disney,burbank,ca
+edison international,rosemead,ca
+dana holding,maumee,oh
+owens corning,toledo,oh
+archer daniels midland,decatur,il
+freeport-mcmoran,phoenix,az
+avnet,phoenix,az
+republic services,phoenix,az
+insight enterprises,tempe,az
+simon property group,indianapolis,in
+anthem,indianapolis,in
+eli lilly,indianapolis,in
+state farm insurance cos.,bloomington,il
+duke energy,charlotte,nc
+nucor,charlotte,nc
+sonic automotive,charlotte,nc
+bank of america corp.,charlotte,nc
+nrg energy,princeton,nj
+lennar,miami,fl
+ryder system,miami,fl
+world fuel services,miami,fl
+tjx,framingham,ma
+staples,framingham,ma
+boston scientific,natick,ma
+biogen,cambridge,ma
+raytheon,waltham,ma
+thermo fisher scientific,waltham,ma
+global partners,waltham,ma
+dow chemical,midland,mi
+wec energy group,milwaukee,wi
+northwestern mutual,milwaukee,wi
+rockwell automation,milwaukee,wi
+harley-davidson,milwaukee,wi
+manpowergroup,milwaukee,wi
+constellation brands,fairport,ny
+toll brothers,horsham,pa
+ugi,king of prussia,pa
+universal health services,king of prussia,pa
+host hotels & resorts,bethesda,md
+lockheed martin,bethesda,md
+marriott international,bethesda,md
+discovery communications,silver spring,md
+anadarko petroleum,the woodlands,tx
+avis budget group,parsippany,nj
+pbf energy,parsippany,nj
+wyndham worldwide,parsippany,nj
+quest diagnostics,secaucus,nj
+realogy holdings,madison,nj
+honeywell international,morris township,nj
+aflac,columbus,ga
+henry schein,melville,ny
+dupont,wilmington,de
+chemours,wilmington,de
+amphenol,wallingford,ct
+leucadia national,new york,ny
+s&p global,new york,ny
+consolidated edison,new york,ny
+guardian life ins. co. of america,new york,ny
+assurant,new york,ny
+verizon communications,new york,ny
+new york life insurance,new york,ny
+l-3 communications,new york,ny
+pvh,new york,ny
+avon products,new york,ny
+intl fcstone,new york,ny
+j.p. morgan chase,new york,ny
+pfizer,new york,ny
+philip morris international,new york,ny
+tiaa,new york,ny
+travelers cos.,new york,ny
+cbs,new york,ny
+time warner,new york,ny
+alcoa,new york,ny
+citigroup,new york,ny
+colgate-palmolive,new york,ny
+hrg group,new york,ny
+omnicom group,new york,ny
+ralph lauren,new york,ny
+alleghany,new york,ny
+interpublic group,new york,ny
+marsh & mclennan,new york,ny
+morgan stanley,new york,ny
+news corp.,new york,ny
+twenty-first century fox,new york,ny
+viacom,new york,ny
+aig,new york,ny
+amtrust financial services,new york,ny
+blackrock,new york,ny
+loews,new york,ny
+foot locker,new york,ny
+estee lauder,new york,ny
+icahn enterprises,new york,ny
+bristol-myers squibb,new york,ny
+goldman sachs group,new york,ny
+american express,new york,ny
+bank of new york mellon corp.,new york,ny
+huntington ingalls industries,newport news,va
+norfolk southern,norfolk,va
+lear,southfield,mi
+kelly services,troy,mi
+penske automotive group,bloomfield hills,mi
+pultegroup,atlanta,ga
+autoliv,auburn hills,mi
+borgwarner,auburn hills,mi
+devon energy,oklahoma city,ok
+chesapeake energy,oklahoma city,ok
+entergy,new orleans,la
+first american financial,santa ana,ca
+darden restaurants,orlando,fl
+western digital,irvine,ca
+centurylink,monroe,la
+nextera energy,juno beach,fl
+office depot,boca raton,fl
+"toys ""r"" us",wayne,nj
+caterpillar,peoria,il
+a-mark precious metals,philadelphia,pa
+aramark,philadelphia,pa
+crown holdings,philadelphia,pa
+raymond james financial,saint petersburg,fl
+jabil circuit,saint petersburg,fl
+tech data,clearwater,fl
+publix super markets,lakeland,fl
+casey's general stores,ankeny,ia
+principal financial,des moines,ia
+cvs health,woonsocket,ri
+citizens financial group,providence,ri
+textron,providence,ri
+united natural foods,providence,ri
+dillard's,little rock,ar
+windstream holdings,little rock,ar
+jetblue airways,long island city,ny
+fiserv,brookfield,wi
+ecolab,saint paul,mn
+st. jude medical,saint paul,mn
+land o'lakes,arden hills,mn
+metlife,new york,ny
+voya financial,new york,ny
+dominion resources,richmond,va
+advance auto parts,roanoke,va
+deere,moline,il
+reinsurance group of america,chesterfield,mo
+centene,saint louis,mo
+graybar electric,saint louis,mo
+olin,clayton,mo
+express scripts holding,saint louis,mo
+jones financial,des peres,mo
+emerson electric,saint louis,mo
+monsanto,saint louis,mo
+ameren,saint louis,mo
+huntsman,salt lake city,ut
+sempra energy,san diego,ca
+qualcomm,san diego,ca
+mckesson,san francisco,ca
+charles schwab,san francisco,ca
+gap,san francisco,ca
+pg&e corp.,san francisco,ca
+salesforce.com,san francisco,ca
+wells fargo,san francisco,ca
+facebook,menlo park,ca
+robert half international,menlo park,ca
+oracle,redwood city,ca
+core-mark holding,south san francisco,ca
+franklin resources,san mateo,ca
+gilead sciences,foster city,ca
+visa,foster city,ca
+paypal holdings,san jose,ca
+alphabet,mountain view,ca
+symantec,mountain view,ca
+netapp,sunnyvale,ca
+yahoo,sunnyvale,ca
+hewlett packard enterprise,palo alto,ca
+hp,palo alto,ca
+tesla,palo alto,ca
+apple,cupertino,ca
+netflix,los gatos,ca
+sanmina,milpitas,ca
+nvidia,santa clara,ca
+applied materials,santa clara,ca
+intel,santa clara,ca
+ebay,san jose,ca
+cisco systems,san jose,ca
+spirit aerosystems holdings,wichita,ks
+autozone,memphis,tn
+fedex,memphis,tn
+international paper,memphis,tn
+corning,corning,ny
+state street corp.,boston,ma
+american tower,boston,ma
+liberty mutual insurance group,boston,ma
+eastman chemical,kingsport,tn
+firstenergy,akron,oh
+goodyear tire & rubber,akron,oh
+gamestop,grapevine,tx
+d.r. horton,fort worth,tx
+american airlines group,fort worth,tx
+arconic,austin,tx
+whole foods market,austin,tx
+oneok,tulsa,ok
+ngl energy partners,tulsa,ok
+williams,tulsa,ok
+bed bath & beyond,union,nj
+celgene,summit,nj
+murphy usa,el dorado,ar
+berry global group,evansville,in
+amgen,thousand oaks,ca
+tyson foods,springdale,ar
+nike,beaverton,or
+j.m. smucker,orrville,oh
+ford motor,dearborn,mi
+masco,taylor,mi
+dte energy,detroit,mi
+ally financial,detroit,mi
+general motors,detroit,mi
+ibm,armonk,ny
+mastercard,purchase,ny
+pepsico,purchase,ny
+delek us holdings,brentwood,tn
+lifepoint health,brentwood,tn
+tractor supply,brentwood,tn
+community health systems,franklin,tn
+dell technologies,round rock,tx
+oshkosh,oshkosh,wi
+owens-illinois,perrysburg,oh
+spartannash,byron center,mi
+kohl's,menomonee falls,wi
+johnson & johnson,new brunswick,nj
+peter kiewit sons',omaha,ne
+mutual of omaha insurance,omaha,ne
+abbvie,north chicago,il
+comcast,philadelphia,pa
+procter & gamble,cincinnati,oh
+ameriprise financial,minneapolis,mn
+3m,maplewood,mn
