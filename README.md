@@ -1,4 +1,4 @@
-# software_engineering_database: CareerCode
+# software_engineering_database: Launcher
 
 This is the submission of the fourth milestone.
 
@@ -75,11 +75,11 @@ I went to MySQL Workbench -> administration -> management -> data export and use
 
 I mainly used the table component (both the new version and the legacy version, because only the legacy version supports dynamic column settings), chart, text, text input boxes (text search), search boxes (drop downs).
 
-Find a video demonstration of the app [here](demo.mp4).
+Find a video demonstration of the app [here](img/demo.mp4).
 
 ### Next steps
 
-- The current UI does not look pretty. Can integrate CSS (I could not figure out how to do that in the low-code platform. I had already spent 10 hours on this task in total by then) to make the front-end look more pretty. Here is a [UI low-fidelity design](UI_demo.mp4) that I made with Figma, indicating how it could look like.
+- The current UI does not look pretty. Can integrate CSS (I could not figure out how to do that in the low-code platform. I had already spent 10 hours on this task in total by then) to make the front-end look more pretty. Here is a [UI low-fidelity design](img/UI_demo.mp4) that I made with Figma, indicating how it could look like.
 - The current website only supports searching by a few attributes. Ideally, the website would enable searching with any of the existing attributes.
 - Update: the users could contribute to the database by updating it with the latest information on the companies, city data, etc. Of course, with the permission of the admin.
 - Automation: keeps track of relevant datasets and update data automatically when new data is updated (eg. a new release of the fortune 500 rank).
