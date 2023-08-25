@@ -7,6 +7,10 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema swe
 -- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema swe
+-- -----------------------------------------------------
 CREATE SCHEMA IF NOT EXISTS `swe` DEFAULT CHARACTER SET utf8 ;
 USE `swe` ;
 
@@ -80,7 +84,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `swe`.`sector` ;
 
 CREATE TABLE IF NOT EXISTS `swe`.`sector` (
-  `s_id` INT NOT NULL AUTO_INCREMENT,
+  `s_id` INT NOT NULL,
   `s_name` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`s_id`))
 ENGINE = InnoDB;
@@ -115,7 +119,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `swe`.`state` ;
 
 CREATE TABLE IF NOT EXISTS `swe`.`state` (
-  `state_id` INT NOT NULL AUTO_INCREMENT,
+  `state_id` INT NOT NULL,
   `state_name` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`state_id`))
 ENGINE = InnoDB;
@@ -176,6 +180,7 @@ CREATE TABLE IF NOT EXISTS `swe`.`company_finance` (
   `p_change` DECIMAL(4,3) NULL,
   `assets` INT NULL,
   `m_value` INT NULL,
+  `m_cap` INT NULL,
   PRIMARY KEY (`c_id`),
   CONSTRAINT
     FOREIGN KEY (`c_id`)
