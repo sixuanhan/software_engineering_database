@@ -1,82 +1,85 @@
-# software_engineering_database
+# software_engineering_database: CareerCode
 
 This is the submission of the fourth milestone.
 
-## ASCII error in milestone2
+## Database Features and Enhancements: frontend and visualization
 
-I fixed the import error mentioned in the README in milestone2. It was due to the ASCII Code imcompatibility. Here are the steps that I took:
+Since the datasets contained rich information in the raw form and my initial vision was to provide users with a fast yet flexible way of job search, I decided to focus on the READ function among CRUD. Therefore, I chose to build a frontend that simplifies querying and provides visualization to maximize user experience.
 
-- go to [hexit.it](https://hexed.it/) and open the csv file
-- change all occurrences of the curly single quotes and curly double quotes to  straight quotes or double quotes
-- save the file
+### Retool
 
-## changes in plan from milestone2
+After exploring resources, I have discovered a tool called Retool. Retool is a platform that enables developers to quickly build internal tools, dashboards, and applications using a simple drag-and-drop interface, connecting to various data sources and APIs without extensive coding, thus streamlining and accelerating the development process.
 
-Some changes of data pre-processing from milestone2:
+Here is their [landing page](https://retool.com/?_keyword=retool&adgroupid=77096230789&utm_source=google&utm_medium=search&utm_campaign=6470119914&utm_term=retool&utm_content=651185010950&hsa_acc=7420316652&hsa_cam=6470119914&hsa_grp=77096230789&hsa_ad=651185010950&hsa_src=g&hsa_tgt=kwd-395242915847&hsa_kw=retool&hsa_mt=e&hsa_net=adwords&hsa_ver=3&gad=1&gclid=Cj0KCQjw_5unBhCMARIsACZyzS096RdAyxfwzTTv78VW3UrBzXE2PuFhg_epKdwFFZ_sYrTlnIp9kAIaAjHnEALw_wcB).
 
-- changed all "-" entries to "null"
-- renamed all columns because it's hard to process spaced names (like "company name" instead of "company_name" in MySQL)
-- moved the step of parsing composite attributes (namely, the `City` column in `city_salary.csv`) to pre-processing
-- dropped the `m_cap` column in `company_finance`
-- found and deleted 3 duplicates in `f500_cleaned.csv`
+#### deploy Retool on AWS EC2
 
-These changes have been updated in [plan.md](/plan.md).
+##### launch an EC2 instance
 
+[Tutorial: Get started with Amazon EC2 Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html)
+- Launch an Amazon Ubuntu EC2 instance on AWS.
+- Use the standard key-pair that I used for class labs.
+- Connect to instance with:
+  ```bash
+  ssh -i Downloads/sixuan-gc-key.pem ubuntu@<public-ip-address>
+  cd retool-onpremise-master
+  sudo docker-compose up -d
+  ```
 
-## implementation
+  then go to `http://<public-ip-address>:3000/auth/login`
 
-To implement the schema of the database from the EER diagram, I used the forward engineering feature in MySQL Workbench. You can find the sql file [here](init.sql).
+##### deploy Retool with docker-compose
+[Tutorial: Deploy Self-hosted Retool with Amazon EC2](https://docs.retool.com/self-hosted/quickstarts/ec2)
 
-To import the data from the csv files, I used the Table Data import Wizard.
+Bugs in the documentation and how to fix:
 
-To Import the data into my database, I followed the Post-import Manipulation process explained in [plan.md](/plan.md).
+1. need to download docker-compose
 
-I wrote [a python script](/brief.py) with the help of ChatGPT to write the DESCRIBE outputs of all the tables to [a txt file](/describes.txt) and write the columns and the first five rows of each table to [another txt file](/first_five_rows.txt). I believe this is more straightforward than uploading a dozen screenshots. Please note that I have omitted my password in the python script for safety reasons.
+2. invalid interpolation format
+   
+   Fix: [How to Fix the Invalid Interpolation Format Error in Docker Compose](https://improveandrepeat.com/2022/08/how-to-fix-the-invalid-interpolation-format-error-in-docker-compose/)
+   
+   need to change docker-compose version from 2 to 2.1
 
-## query
+3. [install docker in Ubuntu in AWS EC2](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository)
 
-### question
+4. out of space
+   Fix: upgrade instance to 16GB storage.
 
-Show company name, which city its headquarter it is at, and the number of employees of the 15 companies with the most number of employees where the adjusted mean salary for software developers is at least twice the adjusted mean salary for all jobs in the headquarter city.
+5. "ip does not provide any data" after putting `<public-ip-address>/auth/signup` in the browser
+   
+   Fix: need to put port after ip address: `<public-ip-address>:3000/auth/signup`
 
-### query
+6. interval service error when putting in correct username and password
+   
+   Fix: after checking the docker logs, found:
 
-```sql
-SELECT c_name, city_name, num_employees FROM company_name
-NATURAL JOIN company_city
-NATURAL JOIN company_employee
-NATURAL JOIN city
-NATURAL JOIN city_salary
-WHERE mean_sd_salary_adj > 2 * mean_salary_adj
-ORDER BY num_employees DESC
-LIMIT 15;
-```
+    ``` JSON
+    {"level":"error","msg":"Internal server error: secretOrPrivateKey must have a value","pid":84,"requestId":"6436a228-84c0-4f3e-a614-2d4b90018c8b","stack":"Error: secretOrPrivateKey must have a value\n    at Object.module.exports [as sign] (/node_modules/jsonwebtoken/sign.js:105:20)\n    at xC (/retool_backend/bundle/main.js:168:15732)\n    at zf (/retool_backend/bundle/main.js:1792:10550)\n    at /retool_backend/bundle/main.js:1792:9974\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)","timestamp":"2023-08-20T03:30:56.995Z","type":"INTERNAL_ERROR"}
+    ```
 
-### result
+    Found relevant debugging article on [Error: secretOrPrivateKey must have a value](https://stackoverflow.com/questions/58673430/error-secretorprivatekey-must-have-a-value), so changed private key in `docker.env`.
 
-```
-+-------------------------+------------+---------------+
-| c_name                  | city_name  | num_employees |
-+-------------------------+------------+---------------+
-| kroger                  | cincinnati |        443000 |
-| home depot              | atlanta    |        406000 |
-| berkshire hathaway      | omaha      |        367700 |
-| fedex                   | memphis    |        335767 |
-| ups                     | atlanta    |        335520 |
-| albertsons cos.         | boise      |        274000 |
-| at&t                    | dallas     |        268540 |
-| hca holdings            | nashville  |        210500 |
-| bank of america corp.   | charlotte  |        208024 |
-| darden restaurants      | orlando    |        150942 |
-| macy's                  | cincinnati |        148300 |
-| american airlines group | fort worth |        122300 |
-| tenet healthcare        | dallas     |        116475 |
-| procter & gamble        | cincinnati |        105000 |
-| coca-cola               | atlanta    |        100300 |
-+-------------------------+------------+---------------+
-15 rows in set (0.00 sec)
-```
+#### connecting Retool to my database
 
-### finding
+I created an AWS RDS, but could not connect to MySQL Workbench no matter what, so I connected the RDS to the EC2 instance and was able to make connection to Self-hosted Retool and then migrate data with Retool.
 
-The findings are pretty straightforward. If you're a job seeker looking forward to earning much more than your non-software developer neighbors at a large company, these companies are good choices. The data provides valuable insights into the companies that not only lead in terms of employee strength but also offer higher adjusted mean salaries for software developers compared to the mean salaries across all job roles in their headquarter cities. This combination of employee strength and competitive software developer salaries demonstrates these companies' prominence and commitment to fostering a thriving workforce within their respective urban centers.
+I went to MySQL Workbench -> administration -> management -> data export and used the dump method to create [a sql file](dump.sql) that contains the migration. I used the sql file in Retool to finih the migration.
+
+#### building front-end with Retool
+
+[Web app tutorial](https://docs.retool.com/apps/web/tutorial/)
+
+[Building Your First Retool App: Product Walkthrough
+](https://www.youtube.com/watch?v=lqFgt4_BS6o&list=PLqWdQFDVLADmCPoQLWJ0G137Z2zExXOGu&index=14)
+
+I mainly used the table component (both the new version and the legacy version, because only the legacy version supports dynamic column settings), chart, text, text input boxes (text search), search boxes (drop downs).
+
+Find a video demonstration of the app [here](demo.mp4).
+
+### Next steps
+
+- The current UI does not look pretty. Can integrate CSS (I could not figure out how to do that in the low-code platform. I had already spent 10 hours on this task in total by then) to make the front-end look more pretty. Here is a [UI low-fidelity design](UI_demo.mp4) that I made with Figma, indicating how it could look like.
+- The current website only supports searching by a few attributes. Ideally, the website would enable searching with any of the existing attributes.
+- Update: the users could contribute to the database by updating it with the latest information on the companies, city data, etc. Of course, with the permission of the admin.
+- Automation: keeps track of relevant datasets and update data automatically when new data is updated (eg. a new release of the fortune 500 rank).
