@@ -1,4 +1,4 @@
-# Plan
+# Database Design, Cleaning and Import Plan
 
 ## Pre-import Manipulation
 
