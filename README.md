@@ -1,6 +1,6 @@
 # software_engineering_database
 
-This is the submission of the fourth milestone.
+This is the submission of the third milestone. I did not resolve merge conflicts correctly, so this README was accidentally not pushed by the time of submission.
 
 ## ASCII error in milestone2
 
