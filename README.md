@@ -2,6 +2,8 @@
 
 This is the submission of the fourth milestone.
 
+Note: This branch and README.md focuses on task 1 and 2. Please refer to the main branch and the wiki for task 3.
+
 ![screenshot](img/careercode.png)
 
 ## Database Features and Enhancements: frontend and visualization
