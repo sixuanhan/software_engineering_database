@@ -1,6 +1,8 @@
-# software_engineering_database: Launcher
+# software_engineering_database: CareerCode
 
 This is the submission of the fourth milestone.
+
+![screenshot](img/careercode.png)
 
 ## Database Features and Enhancements: frontend and visualization
 
